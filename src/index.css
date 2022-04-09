@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 60px !important;
+  padding-top: 12px;
+}
+
+
+body {
+  background-image: url('./assets/img/country-quilt-dark.png') !important;
+  background-attachment: fixed;
+}
+.width{
+  width: 80%;
+}
+.sub-texto{
+  color: white !important;
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+.descrip {
+  font-size: large;
+  color: white !important;
+}
+
+.descrip small{
+  font-size: large;
+  color: white !important;
+}
+
+
+.sub-title2{
+  color: white !important;
+  padding-top: 26px;
+  font-size: 40px !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  color: black !important;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.parrafo{
+  font-size: larger !important;
+  letter-spacing: 2px !important;
+  font-size: 24px !important;
+  color: #ffff !important;
+}
+
+
+.card img{
+  width: auto;
+  height: 280px;
+}
+
+.card-footer{
+  display: block;
+  text-align: center;
+}
+.letraycolor{
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+.text-titulo{
+  font-size: 38px !important;
+}
+.texto{
+  margin-top: 15% !important;
+  font-size: 21px;
+}
+
+.light{
+  background-image: url('./assets/img/y-so-serious-white.png') !important;
+  background-attachment: fixed;
+  color: #000 !important;
+}
+.light h1, h2, h5, p, small{
+  color: #000 !important;
+}
+.light h5 {
+  color: #000 !important;
+}
+.light h2 {
+  color: #000 !important;
+}
+.light small{
+  color: #000 !important;
+}
+
+.card p{
+  color: #ffff !important;
+}
+
+.light .parrafo {
+  color: #000 !important;
 }
