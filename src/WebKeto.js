@@ -54,7 +54,8 @@ export const WebKeto = () => {
             <div className='row  mt-3'>
 
                 <div className='col-2'>
-
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
+                        crossorigin="anonymous"></script>
                 </div>
 
                 <div className='col-8'>
@@ -77,12 +78,18 @@ export const WebKeto = () => {
                 </div>
 
                 <div className='col-2 colDerecha'>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
+                        crossorigin="anonymous"></script>
                 </div>
 
 
 
             </div>
 
+            <div className='text-center'>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
+                    crossorigin="anonymous"></script>
+            </div>
         </div>
     )
 }
