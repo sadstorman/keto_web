@@ -29,6 +29,7 @@ export const WebKeto = () => {
         <div className=''>
             <h1 className='text-center   bold'>Que alimento es keto?</h1>
 
+
             <div className='container-fluid width'>
                 <div className=' '>
                     <h5 className='sub-texto text-center descrip'> Primero que nada, en que se basa la alimentación keto? la dieta se basa en el consumo de alimentos ricos en grasas y proteinas,
@@ -50,22 +51,35 @@ export const WebKeto = () => {
                 </div>
             </div>
 
-            <div className='container mt-3'>
+            <div className='row  mt-3'>
 
-                <div className='row animate__animated animate__fadeIn mt-6 '>
-                    {
-                        (searchText === '') &&
-                        food.map(alimento => (
-                            <KetoCard key={alimento.nombre} {...alimento} />
-                        ))
-                    }
-                    {
-                        (searchText !== '') &&
-                        foodFilter.map(alimento => (
-                            <KetoCard key={alimento.nombre} {...alimento} />
-                        ))
-                    }
+                <div className='col-2'>
+
                 </div>
+
+                <div className='col-8'>
+
+                    <div className='row animate__animated animate__fadeIn mt-6 '>
+                        {
+                            (searchText === '') &&
+                            food.map(alimento => (
+                                <KetoCard key={alimento.nombre} {...alimento} />
+                            ))
+                        }
+                        {
+                            (searchText !== '') &&
+                            foodFilter.map(alimento => (
+                                <KetoCard key={alimento.nombre} {...alimento} />
+                            ))
+                        }
+                    </div>
+
+                </div>
+
+                <div className='col-2 colDerecha'>
+                </div>
+
+
 
             </div>
 

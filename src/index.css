@@ -133,3 +133,12 @@ form.example::after {
 .light .parrafo {
   color: #000 !important;
 }
+
+@media only screen and (max-width: 840px) {
+  .colDerecha {
+    display: none;
+    width: 0%;
+    height: 0%;
+    size: 0px;
+  }
+}
