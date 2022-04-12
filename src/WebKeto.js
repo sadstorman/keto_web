@@ -77,11 +77,10 @@ export const WebKeto = () => {
 
                 </div>
 
-                <div className='col-2 colDerecha'>
+                <div className='col-2 colDerecha notPadding'>
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
                         crossorigin="anonymous"></script>
                 </div>
-
 
 
             </div>
