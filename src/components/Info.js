@@ -5,8 +5,10 @@ export const Info = () => {
     <div>
       <h1 className='text-center   bold'>Que alimento es keto?</h1>
 
-
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
+        crossorigin="anonymous"></script>
       <div className='container-fluid width'>
+
         <div className=' '>
           <h5 className='sub-texto text-center descrip'> Primero que nada, en que se basa la alimentación keto? la dieta se basa en el consumo de alimentos ricos en grasas y proteinas,
             esto significa que hay que evitar los alimentos que contienen carbohidratos (o comer lo menor posible de estos)</h5>
