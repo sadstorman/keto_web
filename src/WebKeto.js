@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react'
-import { KetoCard } from './components/KetoCard'
+import React, { Suspense, lazy, useMemo } from 'react'
+
 import { food } from './data/food'
 import { useForm } from './hooks/useForm'
 import { getFoodByName } from './selectors/getFoodByName'
@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
 import { Button, InputGroup, Stack } from 'react-bootstrap'
+import { getFoodByKeto } from './selectors/getFoodByketo'
+import KetoCardLoading from './components/KetoCardLoading';
+const KetoCard = lazy(() => import('./components/KetoCard'))
 
 export const WebKeto = () => {
 
@@ -24,13 +27,13 @@ export const WebKeto = () => {
     const { searchText } = formValues
 
     const handleSubmit = (e) => {
-        console.log(searchText);
+        console.log(e);
         e.preventDefault()
     }
     const q = searchText
-    const foodFilter = useMemo(() => getFoodByName(q), [q])
+    const foodFilter = useMemo(() => getFoodByName(q), [q]);
 
-    const onInputChange = (e) => {
+    const handleSelect = (e) => {
         console.log(e);
     }
 
@@ -59,8 +62,8 @@ export const WebKeto = () => {
                             alignRight
                             title="Filtro"
                             id="dropdown-menu-align-responsive-1"
+                            onSelect={handleSelect}
                             size="lg"
-                            onSelect={onInputChange}
                             autoClose="true"
                         >
                             <Dropdown.Item eventKey="nombre">Nombre</Dropdown.Item>
@@ -77,45 +80,30 @@ export const WebKeto = () => {
                 </Stack>
             </div>
 
-            <div className='row  mt-3'>
+            <div className='row  mt-3 mx-2'>
+                <div className=''>
 
-                <div className='col-2'>
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
-                        crossorigin="anonymous"></script>
-                </div>
+                    <div className='row animate__animated animate__fadeIn '>
+                        <Suspense fallback={<KetoCardLoading />}>
+                            {
+                                (searchText === '') &&
+                                food.map(alimento => (
+                                    <KetoCard key={alimento.nombre} {...alimento} />
+                                ))
+                            }
+                            {
+                                (searchText !== '') &&
+                                foodFilter.map(alimento => (
+                                    <KetoCard key={alimento.nombre} {...alimento} />
+                                ))
+                            }
+                        </Suspense>
 
-                <div className='col-8'>
-
-                    <div className='row animate__animated animate__fadeIn mt-6 '>
-
-                        {
-                            (searchText === '') &&
-                            food.map(alimento => (
-                                <KetoCard key={alimento.nombre} {...alimento} />
-                            ))
-                        }
-                        {
-                            (searchText !== '') &&
-                            foodFilter.map(alimento => (
-                                <KetoCard key={alimento.nombre} {...alimento} />
-                            ))
-                        }
                     </div>
-
                 </div>
-
-                <div className='col-2 colDerecha notPadding'>
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
-                        crossorigin="anonymous"></script>
-                </div>
-
-
             </div>
 
-            <div className='text-center'>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950751451286711"
-                    crossorigin="anonymous"></script>
-            </div>
+
         </div>
     )
 }

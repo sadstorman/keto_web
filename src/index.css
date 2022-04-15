@@ -139,6 +139,9 @@ form::after {
   color: #ffff !important;
 }
 
+.spiner{
+  margin-top: 200px;
+}
 
 .card img {
   width: auto;
