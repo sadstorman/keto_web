@@ -48,13 +48,13 @@ export const Navbar = () => {
             <div className="navbar-collapse order-3 dual-collapse2">
                 <ul className="navbar-nav ms-auto">
                     <span className="nav-item nav-link text-info"> </span>
-                    <button
+                    <a
                         activeClassName="active"
-                        className="nav-item nav-link btn"
+                        className="nav-item nav-link pointer"
                         onClick={ handleDark}
                     >
                         Light/Dark
-                    </button>
+                    </a>
                 </ul>
             </div>
         </nav>

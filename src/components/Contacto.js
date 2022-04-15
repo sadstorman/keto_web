@@ -2,6 +2,44 @@ import React from 'react'
 
 export const Contacto = () => {
   return (
-    <div>Contacto</div>
+    <div className="contact1">
+		<div className="container-contact1">
+			<div className="contact1-pic js-tilt"t>
+				<img src='../assets/img/img-01.png' alt="IMG"/>
+			</div>
+
+			<form className="contact1-form validate-form" >
+				<span className="contact1-form-title">
+					Get in touch
+				</span>
+
+				<div className="wrap-input1 ">
+					<input className="input1" type="text" name="name" placeholder="Nombre" / >
+
+				</div>
+
+				<div className="wrap-input1 validate-input" >
+					<input className="input1" type="text" name="email" placeholder="Email"/>
+				</div>
+
+				<div className="wrap-input1 validate-input" >
+					<input className="input1" type="text" name="subject" placeholder="Asunto" />
+				</div>
+
+				<div className="wrap-input1 validate-input">
+					<textarea className="input1" name="message" placeholder="Mensaje"></textarea>
+				</div>
+
+				<div className="container-contact1-form-btn">
+					<button className="contact1-form-btn">
+						<span>
+							Send Email
+							<i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
   )
 }
