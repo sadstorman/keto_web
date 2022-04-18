@@ -25,64 +25,64 @@ export const Info = () => {
 
         <div className='row g-4'>
 
-          <div class="col-12 col-md-12 col-lg-6">
-            <section class="box style1">
+          <div className="col-12 col-md-12 col-lg-6">
+            <section className="box style1">
               <img src="../assets/img/phil.jpg"
-                class="imgInfo rounded" />
+                className="imgInfo rounded" alt="perfil" />
               <h3 className='text-black'>PHIL HUGO</h3>
               <p>Farmaceutico y coach</p>
               <ul className='social'>
-                <li><a target="_blank" href="https://www.youtube.com/c/PhilHugoFarmac%C3%A9uticoPersonalTrainer"
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/PhilHugoFarmac%C3%A9uticoPersonalTrainer"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/thephilhugo/" className="icon brands bi bi-instagram"><span
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/thephilhugo/" className="icon brands bi bi-instagram"><span
                   className="label">Instagram</span> </a></li>
 
               </ul>
             </section>
           </div>
 
-          <div class="col-12 col-md-12 col-lg-6">
-            <section class="box style1">
+          <div className="col-12 col-md-12 col-lg-6">
+            <section className="box style1">
               <img src="../assets/img/juanbola.jpg"
-                class="imgInfo rounded" />
+                className="imgInfo rounded" alt="perfil" />
               <h3 className='text-black'>JUAN BOLA</h3>
               <p>Nutrición Humana y Dietética</p>
               <ul className='social'>
-                <li><a target="_blank" href="https://www.youtube.com/channel/UCUcKXgedDT0fa1SEtLxuPgg"
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCUcKXgedDT0fa1SEtLxuPgg"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/juanbolanutritrainer/" className="icon brands bi bi-instagram"><span
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/juanbolanutritrainer/" className="icon brands bi bi-instagram"><span
                   className="label">Instagram</span> </a></li>
 
               </ul>
             </section>
           </div>
 
-          <div class="col-12 col-md-12 col-lg-6">
-            <section class="box style1">
+          <div className="col-12 col-md-12 col-lg-6">
+            <section className="box style1">
               <img src="../assets/img/nutrillermo.jpg"
-                class="imgInfo rounded" />
+                className="imgInfo rounded" alt="perfil" />
               <h3 className='text-black'>Nutrillermo</h3>
               <p>Doctor in Human Nutrition, PhD, FACN, CNS, LDN</p>
               <ul className='social'>
-                <li><a target="_blank" href="https://www.youtube.com/c/Nutrillermo"
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/Nutrillermo"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/nutrillermo/" className="icon brands bi bi-instagram"><span
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nutrillermo/" className="icon brands bi bi-instagram"><span
                   className="label">Instagram</span> </a></li>
 
               </ul>
             </section>
           </div>
 
-          <div class="col-12 col-md-12 col-lg-6 mb-4">
-            <section class="box style1">
+          <div className="col-12 col-md-12 col-lg-6 mb-4">
+            <section className="box style1">
               <img src="../assets/img/diego.jpg"
-                class="imgInfo rounded" />
+                className="imgInfo rounded" alt="perfil" />
               <h3 className='text-black'>Diego Caceres</h3>
               <p>Lic. Nutrición | MSc en tecnologia de alimentos</p>
               <ul className='social'>
-                <li><a target="_blank" href="https://www.youtube.com/channel/UC-_qBg4h0MQQ4r7ckn0gGig"
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC-_qBg4h0MQQ4r7ckn0gGig"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/lic_diego_caceres/" className="icon brands bi bi-instagram"><span
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lic_diego_caceres/" className="icon brands bi bi-instagram"><span
                   className="label">Instagram</span> </a></li>
 
               </ul>
