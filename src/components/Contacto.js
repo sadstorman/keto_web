@@ -80,9 +80,9 @@ export const Contacto = () => {
 			<h3>Encontrame en...</h3>
 			<ul className='social'>
 				<li><a target="_blank" href="https://www.linkedin.com/in/juan-lia/"
-					className="icon brands fa-linkedin-in"><span className="label">LinkedIn</span></a></li>
-				<li><a target="_blank" href="https://github.com/sadstorman" className="icon brands fa-github"><span
-					className="label">Github</span></a></li>
+					className="icon brands bi bi-linkedin"><span className="label">LinkedIn</span></a></li>
+				<li><a target="_blank" href="https://github.com/sadstorman" className="icon brands bi bi-github"><span
+					className="label">Github</span> </a></li>
 
 			</ul>
 
