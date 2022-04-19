@@ -7,13 +7,10 @@ export const Navbar = () => {
     const handleDark = () => {
         console.log('nada');
     }
-
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark text-center">
-
             <div className="navbar-collapse">
                 <div className="navbar-nav text-center">
-
                     <Link
 
                         className="navbar-brand hidden-xs mx-1"
@@ -21,7 +18,6 @@ export const Navbar = () => {
                     >
                         Lista Keto
                     </Link>
-
                     <NavLink
                         activeClassName="active"
                         className="nav-item nav-link "
@@ -30,7 +26,6 @@ export const Navbar = () => {
                     >
                         +info
                     </NavLink>
-
                     <NavLink
                         activeClassName="active"
                         className="nav-item nav-link"
@@ -39,19 +34,15 @@ export const Navbar = () => {
                     >
                         Contacto
                     </NavLink>
-
                 </div>
-
             </div>
-        
-
             <div className="navbar-collapse order-3 dual-collapse2">
                 <ul className="navbar-nav ms-auto">
                     <span className="nav-item nav-link text-info"> </span>
                     <a
                         activeClassName="active"
                         className="nav-item nav-link pointer"
-                        onClick={ handleDark}
+                        onClick={handleDark}
                     >
                         Light/Dark
                     </a>

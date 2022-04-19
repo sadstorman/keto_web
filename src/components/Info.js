@@ -25,12 +25,12 @@ export const Info = () => {
 
         <div className='row g-4'>
 
-          <div className="col-12 col-md-12 col-lg-6">
-            <section className="box style1">
-              <img src="../assets/img/phil.jpg"
-                className="imgInfo rounded" alt="perfil" />
+          <div className="col-12 col-md-12 col-lg-6" >
+            <section className="box style1" >
+              <a target="_blank" rel="noopener noreferrer" href="https://linktr.ee/thephilhugo"><img  src="../assets/img/phil.jpg"
+                className="imgInfo rounded" alt="perfil" /> 
               <h3 className='text-black'>PHIL HUGO</h3>
-              <p>Farmaceutico y coach</p>
+              <p>Farmaceutico y coach</p> </a>
               <ul className='social'>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/PhilHugoFarmac%C3%A9uticoPersonalTrainer"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
@@ -43,10 +43,10 @@ export const Info = () => {
 
           <div className="col-12 col-md-12 col-lg-6">
             <section className="box style1">
-              <img src="../assets/img/juanbola.jpg"
+            <a target="_blank" rel="noopener noreferrer" href="https://linktr.ee/thephilhugo"> <img src="../assets/img/juanbola.jpg"
                 className="imgInfo rounded" alt="perfil" />
               <h3 className='text-black'>JUAN BOLA</h3>
-              <p>Nutrición Humana y Dietética</p>
+              <p>Nutrición Humana y Dietética</p> </a>
               <ul className='social'>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCUcKXgedDT0fa1SEtLxuPgg"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
@@ -59,10 +59,10 @@ export const Info = () => {
 
           <div className="col-12 col-md-12 col-lg-6">
             <section className="box style1">
-              <img src="../assets/img/nutrillermo.jpg"
+            <a target="_blank" rel="noopener noreferrer" href="https://www.nutrillermo.com/"> <img src="../assets/img/nutrillermo.jpg"
                 className="imgInfo rounded" alt="perfil" />
               <h3 className='text-black'>Nutrillermo</h3>
-              <p>Doctor in Human Nutrition, PhD, FACN, CNS, LDN</p>
+              <p>Doctor in Human Nutrition, PhD, FACN, CNS, LDN</p> </a>
               <ul className='social'>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/Nutrillermo"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
@@ -75,14 +75,30 @@ export const Info = () => {
 
           <div className="col-12 col-md-12 col-lg-6 mb-4">
             <section className="box style1">
-              <img src="../assets/img/diego.jpg"
+            <a target="_blank" rel="noopener noreferrer" href="https://www.nutreal.com.ar/"> <img src="../assets/img/diego.jpg"
                 className="imgInfo rounded" alt="perfil" />
               <h3 className='text-black'>Diego Caceres</h3>
-              <p>Lic. Nutrición | MSc en tecnologia de alimentos</p>
+              <p>Lic. Nutrición | MSc en tecnologia de alimentos</p> </a>
               <ul className='social'>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC-_qBg4h0MQQ4r7ckn0gGig"
                   className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lic_diego_caceres/" className="icon brands bi bi-instagram"><span
+                  className="label">Instagram</span> </a></li>
+
+              </ul>
+            </section>
+          </div>
+
+          <div className="col-12 col-md-12 col-lg-6 mb-4">
+            <section className="box style1">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.drlarosa.com/"> <img src="../assets/img/larosa.jpg"
+                className="imgInfo rounded" alt="perfil" />
+              <h3 className='text-black'>Sebastian la rosa</h3>
+              <p>Medico y profesor en medicina</p> </a>
+              <ul className='social'>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCqA4L7zgzJFS01F2km1yiDw"
+                  className="icon brands bi bi-youtube"><span className="label">Youtube</span></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dr.larosa/" className="icon brands bi bi-instagram"><span
                   className="label">Instagram</span> </a></li>
 
               </ul>

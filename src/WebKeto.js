@@ -9,6 +9,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import { Button, InputGroup, Stack } from 'react-bootstrap'
 import { getFoodByKeto } from './selectors/getFoodByketo'
 import KetoCardLoading from './components/KetoCardLoading';
+import ScrollToTop from './components/ScrollToTop';
 const KetoCard = lazy(() => import('./components/KetoCard'))
 
 export const WebKeto = () => {
@@ -37,8 +38,10 @@ export const WebKeto = () => {
         console.log(e);
     }
 
+
     return (
         <div className=''>
+            <ScrollToTop />
             <h1 className='text-center'>Keto food search</h1>
 
             <div className='container-fluid width mt-4'>

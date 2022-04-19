@@ -840,21 +840,7 @@ export const food = [
         "sinonimo": "-"
     },
     {
-        "nombre": "alubias blancas",
-        "keto": "1",
-        "tipo": "Legumbres",
-        "emoji": "MALO",
-        "sinonimo": "-"
-    },
-    {
         "nombre": "frijoles",
-        "keto": "2",
-        "tipo": "Legumbres",
-        "emoji": "MALO",
-        "sinonimo": "-"
-    },
-    {
-        "nombre": "alubias negras",
         "keto": "2",
         "tipo": "Legumbres",
         "emoji": "MALO",
