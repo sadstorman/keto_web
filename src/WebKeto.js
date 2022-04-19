@@ -1,13 +1,8 @@
 import React, { Suspense, lazy, useMemo } from 'react'
-
 import { food } from './data/food'
 import { useForm } from './hooks/useForm'
 import { getFoodByName } from './selectors/getFoodByName'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown'
-import { Button, InputGroup, Stack } from 'react-bootstrap'
-import { getFoodByKeto } from './selectors/getFoodByketo'
 import KetoCardLoading from './components/KetoCardLoading';
 import ScrollToTop from './components/ScrollToTop';
 const KetoCard = lazy(() => import('./components/KetoCard'))
@@ -21,23 +16,20 @@ export const WebKeto = () => {
     }
 
     const initialForm = {
-        searchText: ''
+        searchText: '',
+        value: ''
     }
 
     const [formValues, handleInputChange] = useForm(initialForm)
-    const { searchText } = formValues
+    const { searchText, value } = formValues
 
     const handleSubmit = (e) => {
         console.log(e);
         e.preventDefault()
     }
     const q = searchText
-    const foodFilter = useMemo(() => getFoodByName(q), [q]);
-
-    const handleSelect = (e) => {
-        console.log(e);
-    }
-
+    const q2 = value
+    const foodFilter = useMemo(() => getFoodByName(q, q2), [q])
 
     return (
         <div className=''>
@@ -53,34 +45,22 @@ export const WebKeto = () => {
                 </div>
             </div>
 
-
             <div>
                 <h2 className='sub-title2 text-center '>Cuales son alimentos Keto?</h2>
 
-                <Stack gap={0} direction="horizontal" className='justify-content-center'>
+                    <form onSubmit={handleSubmit} style={style} >
 
-                    <InputGroup onSubmit={handleSubmit} style={style} size="lg">
+                        <select className="form-select selectSearch text-black" name="value" value={value} onChange={handleInputChange} aria-label="Default select example" id='selectionnn' >
+                            <option className='text-black' selected>Nombre</option>
+                            <option className='text-black' value="keto">Valor</option>
+                            <option className='text-black' value="sinonimo">sinonimo</option>
+                        </select>
 
-                        <DropdownButton
-                            alignRight
-                            title="Filtro"
-                            id="dropdown-menu-align-responsive-1"
-                            onSelect={handleSelect}
-                            size="lg"
-                            autoClose="true"
-                        >
-                            <Dropdown.Item eventKey="nombre">Nombre</Dropdown.Item>
-                            <Dropdown.Item eventKey="valor-keto">Valor Keto</Dropdown.Item>
-                            <Dropdown.Item eventKey="tipo-de-alimento">Tipo de alimento</Dropdown.Item>
-                            <Dropdown.Item eventKey="otros-nombres">Otros nombres</Dropdown.Item>
-                        </DropdownButton>
+                        <input autoComplete='off' type="text" placeholder="Buscar..." name="searchText" value={searchText} onChange={handleInputChange} id='inputttt' />
+                        <button type="submit"><i className="search fa fa-search"></i></button>
 
-                        <input autoComplete='off' type="text" placeholder="Buscar..." name="searchText" value={searchText} onChange={handleInputChange} />
-                        <Button type="submit"><i className="search fa fa-search"></i></Button>
+                    </form>
 
-                    </InputGroup>
-
-                </Stack>
             </div>
 
             <div className='row  mt-3 mx-2'>

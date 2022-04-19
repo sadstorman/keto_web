@@ -820,3 +820,9 @@ section:hover {
     transform: translateY(0px);
   }
 }
+.navBarToggler{
+  border: none !important;
+}
+.navBarToggler:focus{
+  box-shadow: none;
+}

@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { Contacto } from '../components/Contacto';
 import { Info } from '../components/Info';
-import { Navbar } from '../components/ui'
+import {Navbar} from '../components/ui';
 import { WebKeto } from '../WebKeto';
 
 export const DashboardRoutes = () => {
