@@ -53,6 +53,10 @@ body {
 * {
   box-sizing: border-box;
 }
+form{
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 /* Style the search field */
 form.example input[type=text] {
@@ -260,6 +264,7 @@ button {
   outline: none !important;
   border: none;
   background: transparent;
+  border-radius: 2px !important;
 }
 
 button:hover {
@@ -295,7 +300,7 @@ iframe {
 .container-contact1 {
   width: 1000px;
   background: #141414 !important;
-  border-radius: 10px;
+  border-radius: 16px;
   overflow: hidden;
 
   display: -webkit-box;
@@ -826,3 +831,26 @@ section:hover {
 .navBarToggler:focus{
   box-shadow: none;
 }
+form input {
+  box-shadow: none !important;
+  outline: none !important;
+}
+select {
+  box-shadow: none !important;
+  outline: none !important;
+  color: white !important;
+  font-size: 15px !important;
+  padding: 0px 0px 0px 5px !important;
+  cursor: pointer;
+  width: 5px !important;
+  background-color: #2196F3 !important;
+  border: 2px solid #2196F3 !important;
+}
+select:hover{
+  background-color: #0b7dda !important;
+  border: 2px solid #0b7dda !important;
+}
+option {
+  background-color: white !important;
+}
+

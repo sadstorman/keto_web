@@ -17,19 +17,18 @@ export const WebKeto = () => {
 
     const initialForm = {
         searchText: '',
-        value: ''
+        value: 'nombre'
     }
 
     const [formValues, handleInputChange] = useForm(initialForm)
     const { searchText, value } = formValues
 
     const handleSubmit = (e) => {
-        console.log(e);
         e.preventDefault()
     }
     const q = searchText
     const q2 = value
-    const foodFilter = useMemo(() => getFoodByName(q, q2), [q])
+    const foodFilter = useMemo(() => getFoodByName(q, q2), [q, q2])
 
     return (
         <div className=''>
@@ -48,19 +47,18 @@ export const WebKeto = () => {
             <div>
                 <h2 className='sub-title2 text-center '>Cuales son alimentos Keto?</h2>
 
-                    <form onSubmit={handleSubmit} style={style} >
+                    <form onSubmit={handleSubmit} className='input-group' style={style}>
 
-                        <select className="form-select selectSearch text-black" name="value" value={value} onChange={handleInputChange} aria-label="Default select example" id='selectionnn' >
-                            <option className='text-black' selected>Nombre</option>
+                        <select className=" form-select filterSelect text-white w-25" name="value" value={value} onChange={handleInputChange} aria-label="Default select example">
+                            <option className='text-black' defaultValue="nombre">Nombre</option>
                             <option className='text-black' value="keto">Valor</option>
                             <option className='text-black' value="sinonimo">sinonimo</option>
                         </select>
 
-                        <input autoComplete='off' type="text" placeholder="Buscar..." name="searchText" value={searchText} onChange={handleInputChange} id='inputttt' />
-                        <button type="submit"><i className="search fa fa-search"></i></button>
+                        <input className='form-control w-50' autoComplete='off' type="text" placeholder="Buscar..." name="searchText" value={searchText} onChange={handleInputChange}  />
+                        <button type="submit"><i className="fa fa-search"></i></button>
 
                     </form>
-
             </div>
 
             <div className='row  mt-3 mx-2'>
@@ -85,8 +83,6 @@ export const WebKeto = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }

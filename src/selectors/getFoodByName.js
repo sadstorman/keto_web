@@ -1,10 +1,9 @@
 import { food } from "../data/food"
 
 export const getFoodByName = (name = '', value = 'nombre') => {
-    if( name === '') {
+    if( name === '' || null) {
         return []
     }
-    name = name.toLocaleLowerCase()
-    return food.filter( comida => comida[value].toLocaleLowerCase().includes(name))
+    return food.filter( comida => comida[value].includes(name))
 }
 
