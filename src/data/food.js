@@ -735,7 +735,7 @@ export const food = [
         "sinonimo": "-"
     },
     {
-        "nombre": "queso crema ",
+        "nombre": "queso crema",
         "keto": "4",
         "tipo": "Lácteo",
         "emoji": "BUENO",
