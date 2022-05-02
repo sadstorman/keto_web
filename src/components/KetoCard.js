@@ -10,7 +10,7 @@ const KetoCard = ({
     // const imagePath = `../assets/food/brocoli.jpg`;
     return (
 
-        <div className='col-12 col-md-6 col-lg-4 col-xl-3 my-4'>
+        <div className='col-12 col-md-12 col-lg-6 col-xl-4 my-4'>
 
             <div className="card bg-dark">
                 <img src={imagePath} className="card-img-top animate__animated animate__fadeIn " alt={nombre} />

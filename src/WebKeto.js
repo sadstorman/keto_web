@@ -1,4 +1,5 @@
 import React, { Suspense, lazy, useMemo } from 'react'
+import AdSense from 'react-adsense';
 import { food } from './data/food'
 import { useForm } from './hooks/useForm'
 import { getFoodByName } from './selectors/getFoodByName'
@@ -31,37 +32,47 @@ export const WebKeto = () => {
     const foodFilter = useMemo(() => getFoodByName(q, q2), [q, q2])
 
     return (
-        <div className=''>
-            <ScrollToTop />
-            <h1 className='text-center'>Keto food search</h1>
+        <div className='container'>
 
-            <div className='container-fluid width mt-4'>
-                <div className=' '>
-                    <h5 className='text-center descrip'>Desde esta web podra realizar facilmente una busqueda de diferentes alimentos puntuados del 1 al 5 <small> (estimado)</small>,
-                        por lo que un alimento valuado en 5 es recomendable para la dieta keto, mientras que uno con 2 puntos es poco recomendable.</h5>
-                    <p className='parrafo text-center'><a className='anchorTag' href='#info'><u>+info</u></a></p>
+            <div className="row">
+                <div className='container-fluid width mt-4'>
+                    <div className=' '>
+                        <h1 className='text-center'>Keto food search</h1>
+                        <h5 className='text-center descrip'>Desde esta web podra realizar facilmente una busqueda de diferentes alimentos puntuados del 1 al 5 <small> (estimado)</small>,
+                            por lo que un alimento valuado en 5 es recomendable para la dieta keto, mientras que uno con 2 puntos es poco recomendable.</h5>
+                        <p className='parrafo text-center'><a className='anchorTag' href='#info'><u>+info</u></a></p>
 
+                        <div>
+                            <h2 className='sub-title2 text-center '>Cuales son alimentos Keto?</h2>
+
+                            <form onSubmit={handleSubmit} className='input-group' style={style}>
+
+                                <select className=" form-select filterSelect text-white w-25" name="value" value={value} onChange={handleInputChange} aria-label="Default select example">
+                                    <option className='text-black' defaultValue="nombre">nombre</option>
+                                    <option className='text-black' value="keto">Valor</option>
+                                    <option className='text-black' value="sinonimo">sinonimo</option>
+                                </select>
+
+                                <input className='form-control w-50' autoComplete='off' type="text" placeholder="Buscar..." name="searchText" value={searchText} onChange={handleInputChange} />
+                                <button type="submit"><i className="fa fa-search"></i></button>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div>
-                <h2 className='sub-title2 text-center '>Cuales son alimentos Keto?</h2>
-
-                    <form onSubmit={handleSubmit} className='input-group' style={style}>
-
-                        <select className=" form-select filterSelect text-white w-25" name="value" value={value} onChange={handleInputChange} aria-label="Default select example">
-                            <option className='text-black' defaultValue="nombre">Nombre</option>
-                            <option className='text-black' value="keto">Valor</option>
-                            <option className='text-black' value="sinonimo">sinonimo</option>
-                        </select>
-
-                        <input className='form-control w-50' autoComplete='off' type="text" placeholder="Buscar..." name="searchText" value={searchText} onChange={handleInputChange}  />
-                        <button type="submit"><i className="fa fa-search"></i></button>
-
-                    </form>
+            <div className="row">
+                <AdSense.Google
+                    client='ca-pub-1950751451286711'
+                    slot='5884860418'
+                    style={{ display: 'block' }}
+                    format='auto'
+                    responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
+                />
             </div>
-
-            <div className='row  mt-3 mx-2'>
+            <ScrollToTop />
+            <div className='row mx-2'>
                 <div className=''>
 
                     <div className='row animate__animated animate__fadeIn '>
@@ -82,6 +93,17 @@ export const WebKeto = () => {
 
                     </div>
                 </div>
+            </div>
+
+            <div className="row">
+                <AdSense.Google
+                    client='ca-pub-1950751451286711'
+                    slot='5884860418'
+                    style={{ display: 'block' }}
+                    format='auto'
+                    responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
+                />
             </div>
         </div>
     )
